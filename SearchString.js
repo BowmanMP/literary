@@ -1,7 +1,7 @@
 //Load a book from disk
 function loadBook(filename, displayName) {
     let currentBook = "";
-    let url = filename;
+//     let url = filename;
 
     //reset our UI
     document.getElementById("fileName").innerHTML = displayName;
@@ -10,7 +10,7 @@ function loadBook(filename, displayName) {
 
     //create a server a request to load our book
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
+    xhr.open("GET", filename, true);
     xhr.send();
 
     xhr.onreadystatechange = function () {
