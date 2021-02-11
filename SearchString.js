@@ -1,7 +1,7 @@
 //Load a book from disk
 function loadBook(filename, displayName) {
     let currentBook = "";
-    let url = "blob/master/" + filename;
+    let url = "https://github.com/BowmanMP/literary/" + filename;
 
     //reset our UI
     document.getElementById("fileName").innerHTML = displayName;
